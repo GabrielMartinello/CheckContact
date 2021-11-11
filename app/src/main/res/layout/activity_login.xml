@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.view.activity.LoginActivity"
+    >
+
+    <TextView
+        android:id="@+id/activity_login_line_text_view1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/color"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        app:layout_constraintBottom_toTopOf="@id/containerComponents"
+        android:layout_marginBottom="15dp"
+        />
+
+
+    <TextView
+        android:id="@+id/activity_login_texto_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:textAlignment="center"
+        android:textColor="@color/colorDefaultBright"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/activity_login_line_text_view1" />
+
+    <View
+        android:id="@+id/containerComponents"
+        android:layout_margin="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/ContainerComponents"
+        />
+
+    <EditText
+        style="@style/Edit_Text"
+        android:id="@+id/activity_login_usuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/containerComponents"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents"
+        app:layout_constraintTop_toTopOf="@id/containerComponents"
+        android:hint="Usuário"
+        android:maxLength="40"
+        android:drawableRight="@drawable/ic_usuario"
+        />
+
+    <EditText
+        style="@style/Edit_Text"
+        android:id="@+id/activity_login_senha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/containerComponents"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents"
+        app:layout_constraintTop_toBottomOf="@id/activity_login_usuario"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        android:maxLength="10"
+        android:drawableRight="@drawable/ic_senha"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/Button"
+        android:id="@+id/activity_login_botao_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="@id/containerComponents"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents"
+        app:layout_constraintTop_toBottomOf="@id/activity_login_senha"
+        android:textColor="@color/colorPrimary"
+        android:text="ENTRAR"
+        />
+
+    <TextView
+        android:id="@+id/activity_login_line_text_view2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/color"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        app:layout_constraintStart_toStartOf="@id/containerComponents"
+        app:layout_constraintTop_toBottomOf="@id/activity_login_botao_login"
+        />
+
+    <TextView
+        android:id="@+id/activity_login_cadastrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cadastre-se"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        app:layout_constraintStart_toStartOf="@id/containerComponents"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents"
+        app:layout_constraintTop_toBottomOf="@id/activity_login_line_text_view2"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

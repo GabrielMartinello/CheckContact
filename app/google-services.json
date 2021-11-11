@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "18512393857",
+    "project_id": "checkcontact-3527e",
+    "storage_bucket": "checkcontact-3527e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:18512393857:android:0f89105a485c411984bf80",
+        "android_client_info": {
+          "package_name": "com.alura.checkcontact"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "18512393857-ttn2t6c24cvmgn54ptseoo91uj6885ki.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsB4r_qXRVKv6EO1c2rUOE3QCIZNTV7Eg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "18512393857-ttn2t6c24cvmgn54ptseoo91uj6885ki.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
